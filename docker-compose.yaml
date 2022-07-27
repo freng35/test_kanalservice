@@ -6,7 +6,7 @@ services:
     depends_on:
       - supply_db
     ports:
-    - '8000:8000'
+    - 8000:8000
     command: ./docker-entrypoint.sh
 
   supply_db:
@@ -15,6 +15,8 @@ services:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: 1234
       POSTGRES_DB: root
+    ports:
+    - 5432:5432
     container_name: supply_db
 
   sheet_script:

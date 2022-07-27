@@ -1,3 +1,5 @@
+import os
+
 import psycopg2
 from psycopg2 import Error
 
@@ -11,10 +13,10 @@ try:
     #                         port='5432'
     # )
     conn = psycopg2.connect(
-                            user='root',
-                            password='1234',
-                            host='supply_db',
-                            port='5432'
+                dbname='root',
+                user='root',
+                password='1234',
+                host='supply_db',
     )
     cur = conn.cursor()
 

@@ -85,7 +85,6 @@ class Sheets:
 
 
 def process():
-    time.sleep(4)
     CREDENTIALS_FILE = 'credentials/creds.json'
     spreadsheet_id = '1IxOrx-AWiK0Xz-gi9K_ex8NyzW1To4MwV7AyBCbVVzU'
 
