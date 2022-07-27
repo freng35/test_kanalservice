@@ -18,23 +18,21 @@ try:
     )
     cur = conn.cursor()
 
-    task = """
-        CREATE TABLE IF NOT EXISTS project_supply(
-        id INT,
-        order_num INT,
-        dollar_cost INT,
-        date_supply TEXT,
-        ruble_cost FLOAT
-        );
-    """
-
-    cur.execute(task)
-    try:
-        cur.execute(task)
-    except (Exception, Error) as error:
-        print("Error db", error)
-    conn.commit()
-    conn.commit()
+    # task = """
+    #     CREATE TABLE IF NOT EXISTS project_supply(
+    #     id INT,
+    #     order_num INT,
+    #     dollar_cost INT,
+    #     date_supply TEXT,
+    #     ruble_cost FLOAT
+    #     );
+    # """
+    #
+    # cur.execute(task)
+    # try:
+    #     cur.execute(task)
+    # except (Exception, Error) as error:
+    #     print("Error db", error)
 
 except (Exception, Error) as error:
     print("Error db", error)

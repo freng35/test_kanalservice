@@ -6,7 +6,7 @@ services:
     depends_on:
       - supply_db
     ports:
-    - 8000:8000
+    - '8000:8000'
     command: ./docker-entrypoint.sh
 
   supply_db:
