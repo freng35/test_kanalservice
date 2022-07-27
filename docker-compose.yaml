@@ -1,0 +1,34 @@
+version: '3.9'
+services:
+  kanal_site:
+    build:
+      context: .
+    depends_on:
+      - supply_db
+    ports:
+    - 8000:8000
+    command: ./docker-entrypoint.sh
+
+  supply_db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: root
+    container_name: supply_db
+
+  sheet_script:
+    build:
+      context: .
+    depends_on:
+      - supply_db
+    command: python3 sheets_script.py
+
+  tg_script:
+    build:
+      context: .
+    depends_on:
+      - supply_db
+    command: python3 tg_script.py
+
+
