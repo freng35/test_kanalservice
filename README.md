@@ -22,9 +22,11 @@
     c. Разработка одностраничного web-приложения на основе Django или Flask. Front-end React.
 
 
-Инструкция по запуску:
+### Инструкция по запуску:  
 docker-compose up --build
 
 если вдруг выйдет вот такая ошибка:  
 ![Screenshot_20220727_215425](https://user-images.githubusercontent.com/38224171/181366260-f866ed47-3dfa-41de-a097-800dd00b4fc2.png)  
-то остановите докер ctrl + c и запустите его заново docker-compose up --build
+то остановите докер ctrl + c и запустите его заново docker-compose up --build  
+   
+[таблица эксель](https://docs.google.com/spreadsheets/d/1IxOrx-AWiK0Xz-gi9K_ex8NyzW1To4MwV7AyBCbVVzU/edit#gid=0)
