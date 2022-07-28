@@ -1,4 +1,4 @@
-version: '3.9'
+version: '3'
 services:
   kanal_site:
     build:
@@ -7,7 +7,7 @@ services:
       - supply_db
     ports:
     - 8000:8000
-    command: ./docker-entrypoint.sh
+    command: bash docker-entrypoint.sh
 
   supply_db:
     image: postgres:13
@@ -16,7 +16,7 @@ services:
       POSTGRES_PASSWORD: 1234
       POSTGRES_DB: root
     ports:
-    - 5432:5432
+    - "5432:5432"
     container_name: supply_db
 
   sheet_script:
