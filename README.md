@@ -30,4 +30,10 @@ docker-compose up --build
 то остановите докер ctrl + c и запустите его заново docker-compose up --build  
    
 сайт распологается по адресу 127.0.0.1 (Запускал докер на виндовс)
-[таблица эксель](https://docs.google.com/spreadsheets/d/1IxOrx-AWiK0Xz-gi9K_ex8NyzW1To4MwV7AyBCbVVzU/edit#gid=0)
+[таблица эксель](https://docs.google.com/spreadsheets/d/1IxOrx-AWiK0Xz-gi9K_ex8NyzW1To4MwV7AyBCbVVzU/edit#gid=0)  
+
+
+
+# PS
+
+вам нужны свои креды от гугл апи с доступом к гугл щитс и гугл диску
